@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>努比亚登录</title>
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+	  html{background:#f5f5f5}
+	  body{width:850px;
+	       height:473px;
+		   margin:0 auto;
+		   background:#FFFFFF;
+		   text-align:center;
+		   }
+	  #main{margin:0 auto;
+	        margin-top:60px;
+	        padding-top:20px;
+	        box-sizing:border-box;
+			position:relative;
+			width:360px;
+			}
+      .navTab span:first-child a{color:#e8380d}
+      .navTab span:last-child a{color:#333}
+	  .navTab{font-size:18px;margin-top:25px}
+	  #main input{width:360px;
+	              height:50px;
+	              box-sizing:border-box;
+				  margin-top:20px;
+				  padding:5px;
+				  border:solid #e0e4e7 1px;}
+	  .bot-sp{text-align:right;margin-top:25px}
+      .bot-sp{color:#d5d5d5}
+	  .bot-sp span:first-child a{color:#e8380d;}
+	  .bot-sp span:last-child a{color:#333}
+      .bot-sp span:last-child a:hover,
+	  .bot-sp span:first-child a:hover{
+	          text-decoration:underline;
+	  }
+	  .btn input{
+	       background:#E8380d;
+		   border:0;
+		   font-size:20px;
+		   color:#FFF;
+	  }
+	  .warning,.warning2{
+	      position:absolute;
+          left:365px;
+		  display:inline-block;
+		  width:120px;
+		  top:133px;
+		  color:red;
+          font-size:13px;
+		  text-align:left;
+	  }
+      .warning2{
+	      position:absolute;
+		  top:204px
+	  }
+	  .pho-reg{display:none}
+      .btn2{width:100px;height:50px;
+	        position:absolute;
+			top:259px;
+			right:0;
+			background:#FFF;
+			box-sizing:border-box;
+			border:1px solid #e0e4e7;
+	  }
+	</style>
+</head>
+<body>  
+	<div id="main">
+	  <img src="image/nubia_login.png" class="logo">
+	  <div class="navTab">
+	    <span id="account"><a href="#">努比亚账号登录</a></span> |
+	    <span id="ph_num"><a href="#">手机验证码登录</a></span>
+	  </div>
+      <div class="usl-reg">
+		  <div class="OText">
+			<input type="text" placeholder="邮箱/手机号/用户名" id="uname" class="tex">
+			<span class="warning"></span>
+		  </div>
+		  <div>
+			<input type="password" placeholder="密码为16个字符（数字、字母、符号至少包含两种）" id="upwd">
+		  </div>
+		  <div class="btn">
+			<input type="submit" value="立即登录" id="btn1">
+		  </div>
+		  <div class="bot-sp">
+			<span><a href="register.html">注册新账号</a></span>&nbsp;|&nbsp;
+			<span><a href="#">忘记密码</a></span>
+		  </div> 
+	  </div> 
+	  <div class="pho-reg">
+	      <div class="OText">
+			<input type="text" placeholder="手机号码" id="phone" class="tex">
+			<span class="warning"></span>
+		  </div>
+		  <div>
+		    <input type="text" placeholder="请输入验证码" class="tex">
+            <span class="warning2 warning"></span>
+		  </div>
+		  <div>
+		    <input type="text" placeholder="请输入手机验证码"><button class="btn2">获取验证码</button>
+		  </div>
+		  <div class="btn">
+			<input type="submit" value="立即登录" id="btn3">
+		  </div>
+		  <div class="bot-sp">
+			<span><a href="register.html">注册新账号</a></span>&nbsp;|&nbsp;
+			<span><a href="#">忘记密码</a></span>
+		  </div> 
+	  </div>
+	</div>
+	<script src="js/jquery-3.2.0.js"></script>
+	<script>
+      $(".tex").blur((e)=>{
+	    if($(e.target).val()==""){
+		  $(e.target).next().html("请填写信息")
+		}else{
+		  $(".warning").html("")
+		}
+	  })
+      //切换登录
+	  $("#account").click(function(){
+	    $(".usl-reg").css("display","block");
+	    $(".pho-reg").css("display","none");
+        $("#ph_num a").css("color","#333");
+		$("#account a").css("color","#e8380d")
+	  })
+	  $("#ph_num").click(function(){
+	    $(".usl-reg").css("display","none");
+	    $(".pho-reg").css("display","block");
+		$("#ph_num a").css("color","#e8380d");
+		$("#account a").css("color","#333")
+	  })
+	  //请求登录信息
+	  $("#btn1").click(e=>{
+	    e.preventDefault();
+		var n=$("#uname").val();
+		var p=$("#upwd").val();
+		
+		$.ajax({
+		  type:"GET",
+		  url:"data/login.php",
+		  data:{uname:n,upwd:p},  
+		  success:function(data){
+			console.log(data);
+		    str=data.msg;
+			if(str==""){
+			  sessionStorage["uname"]=n;
+			 location.href="nubiya.html";
+			}
+            $("#uname+.warning").html(str);
+			
+		  },
+         error:function(){
+            alert("网络错误");
+        }
+		})
+	  })
+	  
+	</script>
+</body>
+</html>

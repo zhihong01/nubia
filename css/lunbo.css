@@ -1,0 +1,88 @@
+#bdy-main{
+  
+  position:relative;
+	width:1424px;
+	margin:0 auto;
+	}
+#bdy-main .clear{  
+  height:520px;
+  overflow:hidden;
+		}
+#bdy-main #lunbo img {
+  width:1424px;
+  height:520px;
+  position:absolute;
+  left:0;
+  top:0;
+  transition:opacity .5s linear;
+  opacity:1;
+	}
+#bdy-left{
+  background:#fafafa;
+  height:520px;
+  position:absolute;
+  top:0px;
+  left:112px;
+  width:250px;
+  
+	 }
+#bdy-left2 ul{
+  background:white;
+  height:520px;
+  position:absolute;
+  top:0px;
+  left:362px;
+  width:250px;
+  z-Index:20001;
+  display:none;
+	 }
+#bdy-left2 img{
+  width:60px;
+  height:60px;
+}
+#bdy-left ul{margin-top:12px}
+#bdy-left ul li{
+  height:62px;
+  line-height:62px;
+  width:250px;
+/*  margin-left:80px;*/
+  box-sizing:border-box;
+  padding-left:80px;
+	}
+#bdy-left2 li{
+  height:62px;
+  line-height:62px;
+  margin:15px 0;
+}
+.bdy-prev,.bdy-next{
+  border-radius:40%;
+  width:41px;
+  height:70px;
+  background:black;
+  line-height:70px;
+  text-align:center;
+  font-size:40px;
+  opacity:0.3;
+  position:absolute;
+  top:225px;
+  z-index:20000;
+	}
+.bdy-prev{
+  left:410px;
+	}
+.bdy-next{
+  right:0px;
+	}
+.dote{
+  position:absolute;
+  bottom:10px;
+  left:650px;	
+	}
+.dote li{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:gray;
+  float:left;
+  margin-left:20px;
+	}

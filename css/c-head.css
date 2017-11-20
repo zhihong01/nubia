@@ -1,0 +1,38 @@
+#bdy-content{
+  margin:10px auto;
+  width:1200px;
+	 }
+#bdy-content table{
+  border:1px solid silver;
+  border-collapse:collapse;
+  float:left;
+	 }
+#bdy-content td{
+  width:80px;
+  height:90px;
+  text-align:center;
+  background-color:#F4F3EF;
+  border:1px solid silver;
+  box-sizing:border-box;
+	 }
+#bdy-content td:hover{
+  background:#f35c49;
+	 }
+.content-head>table div{
+  width:16px;
+  height:20px;
+  border:1px solid gray;
+  margin:0 auto;
+	 }
+.content-head>table span{
+  margin-top:8px;
+  display:block;
+  font-size:12px;
+	 }
+.chead-right img{
+  float:left;
+  margin-left:8px;
+	 }
+#bdy-content h2{
+  margin:30px 0;
+}

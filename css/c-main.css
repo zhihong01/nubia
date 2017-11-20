@@ -1,0 +1,68 @@
+	 .c-mainThree,.c-mainTwo2,.c-mainTwo1,.c-mainOne{
+	   text-align:center;}
+     .c-mainOne h3{margin:10px 0}
+     .c-mainOne span,.c-mainTwo1 span,.c-mainTwo2 span{color:red;}
+	 .c-mainTwo1,.c-mainOne,.c-mainTwo2{
+	   width:100%;
+	   display:flex;
+	   justify-content:space-between;}
+	 
+	 .c-mainThree>.c-mt>div,.c-mainTwo1>div,.c-mainOne>div,.c-mainTwo2>div{
+	   width:290px;
+	   height:450px;
+	   background:#f4f3ef;}
+	 .c-mt img:not(.nv){margin-top:60px;}
+	 
+	 .c-mainThree>.c-mt>.nVR{
+	   width:593px;
+	   height:450px;
+	   margin-bottom:12px;
+	   }
+	 .c-mt{
+	      width:100%;
+		  height:912px;
+	      display:flex;
+		  flex-wrap:wrap;
+	      justify-content:space-between;
+	      align-content:spaqce-between;
+		 }
+	 
+	 .c-mainTwo1{margin-bottom:12px;}
+	 .c-pic{margin:12px auto;}
+	 .c-mainFour{background:#f4f3ef;width:100%;}
+	 .phone>.c-txt{
+	   border-radius:50%;
+	   background:#ff6951;
+	   width:48px;
+	   height:48px;
+	   line-height:48px;
+	   margin-left:10px;
+	   text-align:center;
+	   margin:12px 0 12px 12px;
+	 }
+	 .c-txt a{color:#fff}
+	 .mov-top {transition:transform .5s;}
+     .mov-top:hover{transform:translateY(-10px);}
+     .phone{position:relative}
+	 .price{
+	   position:absolute;
+	   bottom:30px;
+	   left:100px;
+	   color:#FF6951;
+	 }
+	 .price small{
+	   color:silver;
+	   text-decoration:line-through;
+	 }
+	 .btn-info,.btn-sell{
+       display:inline-block;
+       width:116px;height:34px;
+	   border-radius:16px;
+	   line-height:34px;
+	   margin:10px 6px 0 6px
+     }
+     .btn-info{background:#fff;color:#FF6951}
+     .btn-sell{background:#FF6951;color:#fff}
+     .btn-ph{display:none}
+     .phone:hover .btn-ph{display:block}
+     .phone:hover .price{display:none}

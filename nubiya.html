@@ -1,0 +1,896 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/head.css">
+  <link rel="stylesheet" href="css/lunbo.css">
+  <link rel="stylesheet" href="css/c-head.css">
+  <link rel="stylesheet" href="css/foot.css">
+  <link rel="stylesheet" href="css/c-main.css">
+	<style>
+  .c-mainFour{margin-top:50px;padding-bottom:40px}
+  .c-mainFour h2{width:1200px;margin:30px auto}
+  .c-mainFour1 img,.c-mainFour2 img{width:290px;height:200px;}
+  .c-mainFour1 div:hover img{width:300px;height:207px;}
+  .c-mainFour1 div:hover h3{font-size:18px}
+  .c-mainFour1 div:hover p{font-size:16px}
+  .c-mainFour1 img,.c-mainFour1 h3,.c-mainFour1 p{
+    transition:all .5s linear;
+  }
+  .c-mainFour1,.c-mainFour2{
+     text-align:center;
+     display:flex;
+     justify-content:space-between;
+	 width:1200px;
+	 margin:0 auto;}
+  .c-mainFour1 div,.c-mainFour2>div{
+     background:white;
+     height:334px;
+	 width:290px;
+	 overflow:hidden;
+	 position:relative}
+  .c-mainFour1 h3,.c-mainFour2 h3{margin:30px 0 10px 0;}
+  .c-mainFour2>div .btn-circle{
+    width:52px;  
+    height:52px;
+	border-radius:50%;
+	background:rgba(210,210,210,0.6);
+	position:absolute;
+	top:70px;
+	left:119px;
+	transition:all 0.3s linear;
+	}
+  .c-mainFour2>div>img:hover~.btn-circle,.c-mainFour2>div .btn-circle:hover{
+    background:rgba(250,0,0,0.6);
+  }
+  .c-mainFour2>div .btn-circle>div{
+    width:0;height:0;
+	border:10px solid transparent;
+	border-left-width:15px;
+	border-left-color:white;
+	margin:15px 0 0 20px;
+  }
+  .c-mainFour3{width:1200px;margin:0 auto;text-align:center}
+  .c-mf1 div:first-child,.c-mf1 div:last-child{width:593px;height:172px;background:white;float:left;
+  }
+  .c-mf1 div:last-child{float:right}
+  .c-mf1 div p{font-size:20px;margin:30px 0 15px 0}
+  .c-mf2 {
+     width:1200px;
+	 height:117px;
+	 margin:20px auto;
+	 background:white;
+	 margin-bottom:20px;
+	 clear:both;
+	 }
+  .c-mf2 ul li{
+     float:left;
+     line-height:60px;
+	 height:60px;
+	 width:297px;
+	 margin-top:29px}
+  .c-mf2 ul li:not(:first-child){border-left:1px solid silver}
+
+	</style>
+  <title></title>
+ </head>
+ <body>
+		<header id="header">
+		    <div></div>
+		    <div class="head-main"> 
+			  <div class="head-main-left">
+				  <img src="image/head-logo.png">
+			  </div>
+			  <div class="head-lie">
+				  <ul>
+					  <li><a href="#">商城</a></li>
+					  <li class="drop-down">
+					    <a href="#" class="oph">手机</a>
+					    <div id="down-sel">
+				          <div class="sele" style="height:0">
+				          <ul>
+					        <li><a href="#"><img src="image/nub1.png"></a></li>
+					        <li><a href="#"><img src="image/nub2.png"></a></li>
+					        <li><a href="#"><img src="image/nub3.png"></a></li>
+					        <li><a href="#"><img src="image/nub4.png"></a></li>
+					        <li><a href="#"><img src="image/nub5.png"></a></li>
+					        <li><a href="#"><img src="image/nub6.png"></a></li>
+					        <li><a href="#"><img src="image/nub7.png"></a></li>
+					        <li><a href="#"><img src="image/nub8.png"></a></li>
+					        <li><a href="#"><img src="image/nub1.png"></a></li>
+				          </ul>
+				          </div>
+		                </div>
+					  </li>
+					  <li><a href="#">配件</a></li>
+					  <li><a href="#">摄影</a></li>
+					  <li><a href="#">服务</a></li>
+					  <li><a href="#">体验店</a></li>
+					  <li><a href="#">社区</a></li>
+					  <li class="Olog"><a href="login.html">登录</a></li>
+				  </ul>
+			  </div>
+			  <div class="head-main-right">
+				  <a href="#">购物车</a>
+			  </div>
+			</div>
+		</header>
+		<div id="bdy-main">
+		    <div class="clear" id="lunbo">
+			  <!--<a href="#"><img src="image/lunbo1.jpg"></a>
+			  <a href="#"><img src="image/lunbo2.jpg"></a>
+			  <a href="#"><img src="image/lunbo3.jpg"></a>
+			  <a href="#"><img src="image/lunbo4.jpg"></a>-->
+			</div>
+		    <div id="bdy-left" style="z-Index:20000">
+			  <ul>
+				  <li>Z17</li>
+				  <li>Z17mini</li>
+				  <li>Z11</li>
+				  <li>Z11mini系列</li>
+				  <li>Z11Max</li>
+				  <li>M&N系列</li>
+				  <li>周边配件</li>
+				  <li>专属配件</li>
+				</ul>	
+			</div>
+			<div id="bdy-left2" style="z-Index:20000">   
+			    <ul>
+				  <li>
+				   <img src="image/59301bea0f7b.jpeg"><a href="#">z17耀石金</a>
+				  </li>
+				  <li>
+				   <img src="image/59301bea0f2f.jpeg"><a href="#">z17黑金</a>
+				  </li>
+				  <li>
+				   <img src="image/59301bea101a.jpeg"><a href="#">z17旭日金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c6bc.jpg"><a href="#">z17烈焰红</a>
+				  </li>
+				  <li>
+				   <img src="image/59301bea1.jpeg"><a href="#">z17极光蓝</a>
+				  </li>
+				</ul>
+                <ul>
+				  <li>
+				   <img src="image/59301bea0f.jpeg"><a href="#">z17mini炫红</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c6.jpg"><a href="#">z17mini雅黑</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c6bca.jpg"><a href="#">z17mini黑金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c6b.jpg"><a href="#">z17mini香槟金</a>
+				  </li>
+				  <li>
+				   <img src="image/5943a9e2e.jpeg"><a href="#">z17mini极光蓝</a>
+				  </li>
+				</ul>
+				<ul>
+				  <li>
+				   <img src="image/594226c66ca.jpg"><a href="#">z11百合金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c670.jpg"><a href="#">z11极光蓝</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c6bca.jpg"><a href="#">z11旭日金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66bb.jpg"><a href="#">z11咖啡金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66.jpg"><a href="#">z11白金版</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66e.jpg"><a href="#">z11星空灰</a>
+				  </li>
+				</ul>
+				<ul>
+				  <li>
+				   <img src="image/594226c6bca.jpg"><a href="#">z11mini黑金</a>
+				  </li>
+				   <li>
+				   <img src="image/594226c6b.jpg"><a href="#">z11mini香槟金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66e.jpg"><a href="#">z11mini卡其色</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66bb.jpg"><a href="#">z11mini金色</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66.jpg"><a href="#">z11mini白色</a>
+				  </li>
+				</ul>
+				<ul>
+				  <li>
+				   <img src="image/594226c6b.jpg"><a href="#">z11Max金色</a>
+				  </li>
+				   <li>
+				   <img src="image/594226c66.jpg"><a href="#">z11Max银色</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c66e.jpg"><a href="#">z11Max星空灰</a>
+				  </li>
+				</ul>
+				<ul style="width:400px">
+				  <li>
+				   <img src="image/59301bea0f7b.jpeg"><a href="#">M2耀石金</a>
+				  </li>
+				  <li>
+				   <img src="image/59301bea0f2f.jpeg"><a href="#">M2黑金</a>
+				  </li>
+				  <li>
+				   <img src="image/59301bea101a.jpeg"><a href="#">M2旭日金</a>
+				  </li>
+				  <li>
+				   <img src="image/594226c6bc.jpg"><a href="#">M2烈焰红</a>
+				  </li>
+				  <li>
+				   <img src="image/59301bea1.jpeg"><a href="#">M2极光蓝</a>
+				  </li>
+				   <li>
+				   <img src="image/594226c66.jpg"><a href="#">M2银色</a>
+				  </li>
+				  <li style="position:absolute;top:0px;left:220px">
+				   <img src="image/594226c66e.jpg"><a href="#">N2星空灰</a>
+				  </li>
+				  <li style="position:absolute; top:77px;left:220px">
+				   <img src="image/59301bea101a.jpeg"><a href="#">N2旭日金</a>
+				  </li>
+				</ul>
+				<ul style="width:400px">
+				  <li>
+				   <img src="image/592e70c9565.jpg"><a href="#">M2耀石金</a>
+				  </li>
+				  <li>
+				   <img src="image/592e70c95ff.jpg"><a href="#">M2黑金</a>
+				  </li>
+				  <li>
+				   <img src="image/592e70c96fa.jpg"><a href="#">M2旭日金</a>
+				  </li>
+				  <li>
+				   <img src="image/592e7739e93.jpg"><a href="#">M2烈焰红</a>
+				  </li>
+				  <li>
+				   <img src="image/xuanmei.jpg"><a href="#">M2极光蓝</a>
+				  </li>
+				   <li>
+				   <img src="image/592e70c972.jpg"><a href="#">M2银色</a>
+				  </li>
+				  <li style="position:absolute;top:0px;left:220px">
+				   <img src="image/592e70c961.jpg"><a href="#">N2星空灰</a>
+				  </li>
+				</ul>
+				<ul>
+				  <li>
+				   <img src="image/592e70c9455.jpg"><a href="#">耳机</a>
+				  </li>
+				   <li>
+				   <img src="image/592e70c946.jpg"><a href="#">保护壳</a>
+				  </li>
+				  <li>
+				   <img src="image/592e70c952.jpg"><a href="#">皮套</a>
+				  </li>
+				  <li>
+				   <img src="image/592e70c955b.jpg"><a href="#">数据线</a>
+				  </li>
+				  <li>
+				   <img src="image/592e70c953.jpg"><a href="#">充电器</a>
+				  </li>
+				  <li>
+				   <img src="image/150123218.jpg"><a href="#">蓝牙耳机</a>
+				  </li>
+				</ul>
+			</div> 
+			<div class="bdy-prev">&lt;</div>
+			<div class="bdy-next">&gt;</div>
+			<ul class="dote" style="z-Index:20000">
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			</ul>
+		</div>
+		<div id="bdy-content">
+		  <div class="content-head clear">
+			  <table>
+				  <tr>
+					  <td><div></div><span>以旧换新</span></td>
+					  <td><div></div><span>NB码通道</span></td>
+					  <td><div></div><span>意外保</span></td>
+				  </tr>
+				  <tr>
+					  <td><div></div><span>真伪查询</span></td>
+					  <td><div></div><span>售后网点</span></td>
+					  <td><div></div><span>软件下载</span></td>
+				  </tr>
+			  </table>
+				<div class="chead-right">
+				  <img src="image/btop1.jpg">
+				  <img src="image/btop2.jpg">
+				  <img src="image/btop3.jpg">
+				</div>
+			</div>
+		  <h2>热门产品</h2>
+		  <div class="c-mainOne">
+		  <!--  <div class="phone">
+			  <div class="c-txt"><a href="#">直降</a></div>
+			  <div class="mov-top"><img src="image/z17min1.jpg">
+			    <h3>z17mini 6GB+64GB版</h4>
+				<span>省200+赠99元耳机</span>
+				
+			  </div>
+			  <div class="price">
+				￥<b>1499 </b>
+				<small> 1699</small>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">领卷</a></div>
+			  <div class="mov-top"><img src="image/z17min2.jpg">       
+			    <h3>z17mini 4GB+64GB版</h4>
+				<span>领卷立减100+赠音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">买赠</a></div>
+			  <div class="mov-top"><img src="image/z17max1.jpg">		  
+			    <h3>z17 无边框耀石黑</h4>
+				<span>品牌日+赠99元音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">买赠</a></div>
+			  <div class="mov-top"><img src="image/z17max2.jpg">
+			    <h3>z17 无边框旭日金</h4>
+				<span>品牌日+赠99元音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>-->
+		  </div>
+		  
+		  <h2>精品手机</h2>
+		  <div class="c-pic"><img src="image/z17.jpg" alt=""></div>
+		 <div class="c-mainTwo1">
+		   <!-- <div class="phone">
+			  <div class="c-txt"><a href="#">直降</a></div>
+			  <div class="mov-top"><img src="image/z17min1.jpg">
+			    <h3>z17mini 6GB+64GB版</h4>
+				<span>省200+赠99元耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">领卷</a></div>
+			  <div class="mov-top">
+			    <img src="image/z17min2.jpg">       
+			    <h3>z17mini 4GB+64GB版</h4>
+				<span>领卷立减100+赠音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">买赠</a></div>
+			  <div class="mov-top"><img src="image/z17max1.jpg">		  
+			    <h3>z17 无边框耀石黑</h4>
+				<span>品牌日+赠99元音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">买赠</a></div>
+			  <div class="mov-top"><img src="image/z17max2.jpg">
+			    <h3>z17 无边框旭日金</h4>
+				<span>品牌日+赠99元音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>-->
+		  </div>
+		  <div class="c-mainTwo2">
+		   <!-- <div class="phone">
+			  <div class="c-txt"><a href="#">直降</a></div>
+			  <div class="mov-top"><img src="image/z17min1.jpg">
+			    <h3>z17mini 6GB+64GB版</h4>
+				<span>省200+赠99元耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">领卷</a></div>
+			  <div class="mov-top"><img src="image/z17min2.jpg">       
+			    <h3>z17mini 4GB+64GB版</h4>
+				<span>领卷立减100+赠音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">买赠</a></div>
+			  <div class="mov-top"><img src="image/z17max1.jpg">		  
+			    <h3>z17 无边框耀石黑</h4>
+				<span>品牌日+赠99元音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>
+		    <div class="phone">
+			  <div class="c-txt"><a href="#">买赠</a></div>
+			  <div class="mov-top"><img src="image/z17max2.jpg">
+			    <h3>z17 无边框旭日金</h4>
+				<span>品牌日+赠99元音律耳机</span>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">查看详情</a>
+			    <a href="#" class="btn-sell">立刻购买</a>
+			  </div>
+			</div>-->
+		  </div>
+		  <h2>精选配件</h2>
+		  <div class="c-mainThree">
+			  <div class="c-mt">
+				<div class="nVR">
+				  <img class="nv" src="image/nvbiyaVR.jpg">
+				</div>
+				<!--<div class="phone">
+					<img class="mov-top" src="image/whitenanya.jpg">
+					<h3>蓝牙耳机</h3>
+					<div class="btn-ph">
+			         <a href="#" class="btn-info">查看详情</a>
+			         <a href="#" class="btn-sell">立刻购买</a>
+			        </div>
+				</div>
+				<div class="phone">
+					<img class="mov-top" src="image/z17tao.jpg">
+					<h3>z17防震保护套</h3>
+					<div class="btn-ph">
+			         <a href="#" class="btn-info">查看详情</a>
+			         <a href="#" class="btn-sell">立刻购买</a>
+			        </div>
+				</div>
+				<div class="phone">
+				  <img class="mov-top" src="image/z17pitao.jpg">
+				  <h3>全贴和皮套</h3>
+				  <div class="btn-ph">
+			         <a href="#" class="btn-info">查看详情</a>
+			         <a href="#" class="btn-sell">立刻购买</a>
+			      </div>
+				</div>
+				<div class="phone">
+				  <img class="mov-top" src="image/kuaichong.jpg">
+				  <h3>快充移动电源</h3>
+				  <div class="btn-ph">
+			         <a href="#" class="btn-info">查看详情</a>
+			         <a href="#" class="btn-sell">立刻购买</a>
+			      </div>
+				</div>
+				<div class="phone">
+				  <img class="mov-top" src="image/z17fang.jpg">
+				  <h3>z17mini防震保护套</h3>
+				  <div class="btn-ph">
+			         <a href="#" class="btn-info">查看详情</a>
+			         <a href="#" class="btn-sell">立刻购买</a>
+			      </div>
+				</div>
+				<div class="phone">
+				  <img class="mov-top" src="image/xuanmei2.jpg">
+				  <h3>炫美自拍杆</h3>
+				  <div class="btn-ph">
+			         <a href="#" class="btn-info">查看详情</a>
+			         <a href="#" class="btn-sell">立刻购买</a>
+			      </div>
+				</div>-->
+			  </div> 
+		  </div>
+		</div>
+		<div class="c-mainFour">
+		  <h2>产品热评</h2>
+			  <div class="c-mainFour1">
+			     <div>
+					 <img src="image/dongfang.jpg">
+					 <h3>镜头下的东方之珠</h3>
+					 <p>用手机领略香港的魅力</p>
+				 </div>
+			     <div>
+					 <img src="image/z17kabao.jpg">
+					 <h3>镜头下的东方之珠</h3>
+					 <p>用手机领略香港的魅力</p>
+				 </div>
+			     <div>
+				     <img src="image/xinkong.jpg">
+					 <h3>镜头下的东方之珠</h3>
+				     <p>用手机领略香港的魅力</p>
+				 </div>
+			     <div>
+				     <img src="image/wubian.jpg">
+                     <h3>镜头下的东方之珠</h3>
+				     <p>用手机领略香港的魅力</p>
+				  </div>
+			  </div>
+			<h2>视频</h2>
+			  <div class="c-mainFour2">
+			     <div>
+					 <img src="image/z17wubian.jpg">
+					 <h3>镜头下的东方之珠</h3>
+					 <p>用手机领略香港的魅力</p>
+					 <div class="btn-circle">
+					  <div></div> 
+					 </div>
+				 </div>
+			     <div>
+					 <img src="image/minis.jpg">
+					 <h3>镜头下的东方之珠</h3>
+					 <p>用手机领略香港的魅力</p>
+					 <div class="btn-circle">
+					   <div></div>
+					 </div>
+				 </div>
+			     <div>
+				     <img src="image/bugirl.jpg">
+					 <h3>镜头下的东方之珠</h3>
+				     <p>用手机领略香港的魅力</p>
+					 <div class="btn-circle">
+					   <div></div>
+					 </div>
+				 </div>
+			     <div>
+				     <img src="image/hudie.jpg">
+                     <h3>镜头下的东方之珠</h3>
+				     <p>用手机领略香港的魅力</p>
+					 <div class="btn-circle">
+					   <div></div>
+					 </div>
+				 </div>
+			  </div>
+			   <h2>服务</h2>
+			  <div class="c-mainFour3 clear">
+			   
+				<div class="c-mf1 clear">
+				  <div>
+					  <p>售后政策</p>
+					  <span>了解努比亚服务和保修等相关政策</span>
+				  </div>
+				  <div>
+				      <p>特色服务</p>
+					  <span>
+                      我们为您准备了一系列与众不同的服务内容，从意外宝到上门服务，通过电话及服务网点获取支持或安排维修。
+                      </span>
+				  </div>
+				</div>
+				<div class="c-mf2 clear">
+				  <ul>
+				    <li>七天无理由退货</li>
+				    <li>15天免费上门换货</li>
+				    <li>全场59元免运费</li>
+				    <li>查找线下商品</li>
+				  </ul>
+				</div>
+			  </div>
+          </div>
+    <footer id="footer">
+		<div class="f-top clear">
+			<div>
+			  <ul>
+				  <li>关于我们</li>
+				  <li><a href="#">关于努比亚</a></li>
+				  <li><a href="#">新闻中心</a></li>
+				  <li><a href="#">体验店</a></li>
+				  <li><a href="#">公益</a></li>
+				  <li><a href="#">星空之约</a></li>
+				  <li><a href="#">视频长廊</a></li>
+				  <li><a href="#">联系我们</a></li>
+				  <li><a href="#">友情链接</a></li>
+				  <li><a href="#">合作伙伴</a></li>
+			  </ul>
+			  <ul>
+				  <li>手机</li>
+				  <li><a href="#">nubia Z17</a></li>
+				  <li><a href="#">nubia Z17mini</a></li>
+				  <li><a href="#">nubia Z11 miniS</a></li>
+				  <li><a href="#">nubia Z11</a></li>
+				  <li><a href="#">nubia Z11 Max</a></li>
+				  <li><a href="#">nubia Z11 mini</a></li>
+				  <li><a href="#">nubia M2</a></li>
+				  <li><a href="#">nubia 布拉格S</a></li>
+				  <li><a href="#">nubia My 布拉格</a></li>
+			  </ul>		  
+			  <ul>
+				  <li>配件</li>
+				  <li><a href="#">保护壳</a></li>
+				  <li><a href="#">皮套</a></li>
+				  <li><a href="#">贴膜</a></li>
+				  <li><a href="#">耳机</a></li>
+				  <li><a href="#">数据线/充电器</a></li>
+				  <li><a href="#">周边产品</a></li>
+			  </ul>
+			  <ul>
+				  <li>服务中心</li>
+				  <li><a href="#">个人中心</a></li>
+				  <li><a href="#">售后服务</a></li>
+				  <li><a href="#">售后网点</a></li>
+				  <li><a href="#">特色服务</a></li>
+				  <li><a href="#">软件下载</a></li>
+				  <li><a href="#">产品安全</a></li>
+			  </ul>
+			  <ul>
+				  <li>关注我们</li>
+				  <li><a href="#">社区</a></li>
+				  <li><a href="#">新浪微博</a></li>
+				  <li><a href="#">QQ空间</a></li>
+				  <li><a href="#">微信</a></li>
+				  <li><a href="#">百度贴吧</a></li>
+			  </ul>
+			  <ul>
+				  <li>全国服务热线</li>
+				  <li><a href="#">400-700-6600</a></li>
+				  <li>周一到周日 8:30-20:30<br>(全年无休)</li>
+			  </ul>
+			</div>
+		</div>
+		<div class="f-btm">
+			<img src="image/nubia-logo-x2.png">
+			<div class="tubiao">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="f-btm-1">
+				<span>2012-2017 努比亚技术有限公司 版权所有</span>
+				<a href="#">粤ICP备10006213号-2 </a>
+			</div>	
+			<div class="f-btm-2">
+				<img src="image/gswj.jpg">
+				<span>ICP经营许可证编号：粤B2-20120688</span>
+				<img src="image/guohui.png">
+				<a href="#">粤公网安备 44030502000309号 </a>
+			</div>
+			<div class="f-btm-3">
+				<a href="#">加入我们</a> -
+				<a href="#">公益</a> -
+				<a href="#">星空之约</a> -
+				<a href="#">问题反馈</a> -
+			    <a href="#">简体中文</a>
+			</div>
+		</div>
+	</footer>
+
+		<script src="js/ajax.js"></script>
+		<!--<script src="js/move.js"></script>-->
+  <script>
+  //sessionStorage数据储存
+   var oLog=document.querySelector(".Olog");
+   var val=sessionStorage.getItem("uname");
+   if(val!=null){oLog.innerHTML="欢迎回来："+val+" | <a href='nubiya-home.html'>退出登录</a>";}
+   oLog.onclick=function(){
+     sessionStorage.removeItem("uname")
+   };
+   //轮播图
+   (()=>{var oBdy=document.getElementById("bdy-main");
+	  var olun=document.getElementById("lunbo");
+	  var aImg=olun.getElementsByTagName("img");
+	  ajax("get","data/banners.php").then(function(resText){
+	  var banners=eval("("+resText+")");
+	  var str="";
+	  for(var p of banners){
+	  str+=` <a href="#"><img src="${p.npic}"></a>`
+	  olun.innerHTML=str;
+	  }
+	}).then(function(){
+	    var lunbo=document.getElementById("lunbo");
+	    var aImg=lunbo.getElementsByTagName("img");
+	    var prev=document.querySelector(".bdy-prev");
+	    var next=document.querySelector(".bdy-next");
+		var dote=document.getElementsByClassName("dote")[0];
+		var aDote=dote.getElementsByTagName("li");
+		var timer=null,time=null;
+		var i=3,n=10;
+		aDote[i].style.backgroundColor="red";
+		next.onclick=function(){
+			clearInterval(time);
+			aDote[i].style.backgroundColor="";
+			i++;
+			if(i>3){			
+			 i=0;
+			}
+			aImg[i].style.opacity=0;
+			aImg[i].style.zIndex=n++;
+			startMove(aImg[i]);			
+			aDote[i].style.backgroundColor="red";
+			time=setInterval(next.onclick,3000);					  
+        }
+       
+		prev.onclick=function(){
+			clearInterval(time);
+			aDote[i].style.backgroundColor="";
+		   i--;
+		   if(i<0){
+		    i=3;
+		   }	   
+		   aImg[i].style.opacity=0;
+		   n++; 
+		   aImg[i].style.zIndex=n;   
+		   startMove(aImg[i]);    
+		   aDote[i].style.backgroundColor="red";
+		   time=setInterval(next.onclick,3000)
+		}
+		
+	function startMove(obj){
+	  var parent = obj.parentNode.parentNode;
+	  var as = parent.children;
+	  for(let i=0;i<as.length;i++){
+		as[i].children[0].style.opacity=0;
+	  }  
+	  clearInterval(obj.timer);
+	  obj.timer=setInterval(function(){
+	  var cur=0;
+	  var speed=0.2;
+      cur=parseFloat(obj.style.opacity);
+	  cur=cur+speed;
+	  if(cur>1){
+	    clearInterval(obj.timer)
+	    }else{
+		obj.style.opacity=cur;
+		}
+	  },100)
+	}
+	time=setInterval(next.onclick,3000);
+	lunbo.onmouseover=function(){
+	  clearInterval(time); 
+	}
+	lunbo.onmouseout=function(){
+	  time=setInterval(next.onclick,3000);
+	}
+	})})();
+	//手机数据
+    (()=>{ajax("get","data/phoneshop.php").then(function(resText){
+		var resText=eval("("+resText+")");
+	 console.log(resText[3])
+	  var html="";
+	  var cMainOne=document.getElementsByClassName("c-mainOne")[0];
+	  var cMainTwo1=document.getElementsByClassName("c-mainTwo1")[0];
+	  var cMainTwo2=document.getElementsByClassName("c-mainTwo2")[0];
+	  function ins(count,ele){
+	    for(var i=count;i<count+4;i++){
+		  inner();
+	    }
+	    ele.innerHTML=html;
+	    function inner(){		  
+		  html+=`<div class="phone">
+			  <div class="c-txt"><a href="#">直降</a></div>
+			  <div class="mov-top"><img src="${resText[i].phic}">
+			    <h3>${resText[i].ptle}</h4>
+				<span>${resText[i].pexp}</span>
+				
+			  </div>
+			  <div class="price">
+				￥<b>${resText[i].price} </b>
+				<small>${resText[i].oprice}</small>
+			  </div>
+			  <div class="btn-ph">
+			    <a href="#" class="btn-info">${resText[i].cheek}</a>
+			    <a href="#" class="btn-sell">${resText[i].buy}</a>
+			  </div>
+			</div>`;
+			}
+	  }
+       ins(0,cMainOne);
+    (function(){
+		html="";
+		ins(4,cMainTwo1)})();
+     (function(){
+		 html="";
+		 ins(8,cMainTwo2)
+		 })() 
+	})
+	})();
+	//精品配件
+  (()=>{ajax("get","data/parts.php").then(function(data){
+	     var data=eval("("+data+")");
+	     var html="";
+	     var oCmt=document.getElementsByClassName("c-mt")[0]
+	     for (var part of data){
+	     html+=`<div class="phone">
+			      <img class="mov-top" src="${part.paimg}">
+			      <h3>${part.pname}</h3>
+			      <div class="btn-ph">
+			      <a href="#" class="btn-info">${part.pcheek}</a>
+			      <a href="#" class="btn-sell">${part.pbuy}</a>
+			       </div>
+		        </div>`
+	      }
+	     var str=`<div class="nVR">
+				  <img class="nv" src="image/nvbiyaVR.jpg">
+				  </div>`
+	     str+=html;
+	     oCmt.innerHTML=str;
+       })
+	})()
+    
+	var bLeft=document.getElementById("bdy-left");
+	var alunboLi=bLeft.getElementsByTagName("li");
+	var bLeft2=document.getElementById("bdy-left2");
+	var alunboUl=bLeft2.getElementsByTagName("ul");
+    
+	for(let j=0;j<alunboLi.length;j++){
+		var li = alunboLi[j];
+	  alunboUl[j].onmouseover=li.onmouseover=function(){
+	    this.style.background="white";
+	    this.style.color="red";
+        alunboUl[j].style.display="block";
+
+	  }
+	  alunboUl[j].onmouseout=li.onmouseout=function(){
+	    this.style.background="#fafafa";
+		this.style.color="gray";
+        alunboUl[j].style.display="none";
+	  }
+	}
+	var dropDown=document.getElementsByClassName("drop-down")[0];
+	var sele=document.getElementsByClassName("sele")[0];
+    var h=parseInt(sele.offsetHeight);
+	var time2=null;
+	dropDown.onmouseenter=function(){
+		clearInterval(time2);
+	  time2=setInterval(function(){
+			 h+=10;
+			 if(h>250){
+			 clearInterval(time2);
+			 }else{
+			  sele.style.height=h+"px" 
+			 }
+			},10)}
+			var flag=true;
+    dropDown.onmouseleave=function(){
+		//var h=280;
+		clearInterval(time2);
+	  time2=setInterval(function(){
+			 h-=10;
+			 if(h<0){
+			clearInterval(time2);
+			 }else{
+			 sele.style.height=h+"px"  
+			 }
+			},10);
+	  }
+  </script>
+ </body>
+</html>

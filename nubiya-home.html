@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/head.css">
+	<link rel="stylesheet" href="css/foot.css">
+	<style>
+	  .main-banner{
+	    width:1424px;
+		overflow:hidden;
+		margin:0 auto;
+		position:relative;
+	  }
+	  ul.carousel{
+		position:relative;
+		left:0;
+		
+	  }
+	  .carousel img{
+	    width:1424px;
+		height:560px;
+	  }
+	  .carousel li{
+	    float:left;
+	  }
+	  .prev-btn,.next-btn{
+	    position:absolute;
+		top:30px;
+		bottom:30px;
+		margin:auto 4px;
+		width:48px;
+		height:88px;
+        border-radius:24px;
+		background:gray;
+		color:black;
+		font-size:40px;
+		line-height:88px;
+		text-align:center;
+		opacity:0;
+		transition:opacity .5s linear;
+		z-index:10;
+	  }
+	  .main-banner:hover .prev-btn,.main-banner:hover .next-btn{
+	    opacity:0.4;
+		
+	  }
+	  .next-btn{
+	    right:0;
+	  }
+	  .bot-btn{
+	    position:absolute;
+		left:646px;
+		bottom:20px
+		
+	  }
+	  .bot-btn ul li{
+	    float:left;
+		width:40px;
+		height:2px;
+		background:gray;
+		margin:0 4px;
+	  }
+	  .bot-btn ul li:hover{
+	    background:#FF6951;
+	  }
+	  .bot-btn ul li.on{
+	    background:#FF6951;
+	  }
+	  .main-bot{width:1424px;margin:0 auto}
+	  .main-bot div{
+	    width:470px;
+		height:296px;
+		overflow:hidden;
+        float:left;
+		margin:6px 0 0 4px;
+		line-height:296px;
+		text-align:center;
+	  }
+	  .main-bot img{
+	    width:475px;
+		height:299px;
+		transition:all 1s;
+		opacity:0.8;
+	  }
+	  .main-bot img:hover{
+	   width:100%;
+	   height:100%;
+	   opacity:1;
+	  }
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="head-main"> 
+			<div class="head-main-left">
+			    <img src="image/head-logo.png">
+			</div>
+			<div class="head-lie">
+				<ul>
+				    <li><a href="nubiya.html">商城</a></li>
+				    <li><a href="#" class="oph">手机</a></li>
+				    <li><a href="#">配件</a></li>
+				    <li><a href="#">摄影</a></li>
+				    <li><a href="#">服务</a></li>
+				    <li><a href="#">体验店</a></li>
+				    <li><a href="#">社区</a></li>
+				    <li><a href="#">nubia UI</a></li>
+                    <li><a href="login.html">登录</a></li>
+				</ul>
+			</div>
+			<div class="head-main-right">
+				<a href="#">购物车</a>
+			</div>
+		</div>
+		<div id="down-sel">
+			<div class="sele" style="height:0">
+				<ul>
+					<li><a href="#"><img src="image/nub1.png"></a></li>
+					<li><a href="#"><img src="image/nub2.png"></a></li>
+					<li><a href="#"><img src="image/nub3.png"></a></li>
+					<li><a href="#"><img src="image/nub4.png"></a></li>
+					<li><a href="#"><img src="image/nub5.png"></a></li>
+					<li><a href="#"><img src="image/nub6.png"></a></li>
+					<li><a href="#"><img src="image/nub7.png"></a></li>
+					<li><a href="#"><img src="image/nub8.png"></a></li>
+					<li><a href="#"><img src="image/nub1.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+	  <div class="clear main-banner">
+	    <ul class="clear carousel">
+		 <!-- <li>
+		    <a href="#"><img src="image/carousel1.jpg"></a>
+		  </li>
+		  <li>
+		    <a href="#"><img src="image/carousel2.jpg"></a>
+		  </li>
+		  <li>
+		    <a href="#"><img src="image/carousel3.jpg"></a>
+		  </li>
+		  <li>
+		    <a href="#"><img src="image/carousel1.jpg"></a>
+		  </li>-->
+		</ul>
+		<div class="prev-btn"><a href="#">&lt;</a></div>
+		<div class="next-btn"><a href="#">&gt;</a></div>
+		<div class="bot-btn">
+		  <ul class="clear">
+		    <li class="on"><a href="#"></a></li>
+		    <li><a href="#"></a></li>
+		    <li><a href="#"></a></li>
+		  </ul>
+		</div>
+	  </div>
+      <div class="main-bot">
+       <!-- <div>  
+	      <img src="image/nubia-a.png">
+		</div>
+		<div>
+	      <img src="image/nubia-b.png">
+		</div>
+		<div>
+	      <img src="image/nubia-c.png">
+		</div>-->
+	  </div>
+	</div>
+	<footer id="footer">
+		<div class="f-top clear">
+			<div>
+			  <ul>
+				  <li>关于我们</li>
+				  <li><a href="#">关于努比亚</a></li>
+				  <li><a href="#">新闻中心</a></li>
+				  <li><a href="#">体验店</a></li>
+				  <li><a href="#">公益</a></li>
+				  <li><a href="#">星空之约</a></li>
+				  <li><a href="#">视频长廊</a></li>
+				  <li><a href="#">联系我们</a></li>
+				  <li><a href="#">友情链接</a></li>
+				  <li><a href="#">合作伙伴</a></li>
+			  </ul>
+			  <ul>
+				  <li>手机</li>
+				  <li><a href="#">nubia Z17</a></li>
+				  <li><a href="#">nubia Z17mini</a></li>
+				  <li><a href="#">nubia Z11 miniS</a></li>
+				  <li><a href="#">nubia Z11</a></li>
+				  <li><a href="#">nubia Z11 Max</a></li>
+				  <li><a href="#">nubia Z11 mini</a></li>
+				  <li><a href="#">nubia M2</a></li>
+				  <li><a href="#">nubia 布拉格S</a></li>
+				  <li><a href="#">nubia My 布拉格</a></li>
+			  </ul>		  
+			  <ul>
+				  <li>配件</li>
+				  <li><a href="#">保护壳</a></li>
+				  <li><a href="#">皮套</a></li>
+				  <li><a href="#">贴膜</a></li>
+				  <li><a href="#">耳机</a></li>
+				  <li><a href="#">数据线/充电器</a></li>
+				  <li><a href="#">周边产品</a></li>
+			  </ul>
+			  <ul>
+				  <li>服务中心</li>
+				  <li><a href="#">个人中心</a></li>
+				  <li><a href="#">售后服务</a></li>
+				  <li><a href="#">售后网点</a></li>
+				  <li><a href="#">特色服务</a></li>
+				  <li><a href="#">软件下载</a></li>
+				  <li><a href="#">产品安全</a></li>
+			  </ul>
+			  <ul>
+				  <li>关注我们</li>
+				  <li><a href="#">社区</a></li>
+				  <li><a href="#">新浪微博</a></li>
+				  <li><a href="#">QQ空间</a></li>
+				  <li><a href="#">微信</a></li>
+				  <li><a href="#">百度贴吧</a></li>
+			  </ul>
+			  <ul>
+				  <li>全国服务热线</li>
+				  <li><a href="#">400-700-6600</a></li>
+				  <li>周一到周日 8:30-20:30<br>(全年无休)</li>
+			  </ul>
+			</div>
+		</div>
+		<div class="f-btm">
+			<img src="image/nubia-logo-x2.png">
+			<div class="tubiao">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="f-btm-1">
+				<span>2012-2017 努比亚技术有限公司 版权所有</span>
+				<a href="#">粤ICP备10006213号-2 </a>
+			</div>	
+			<div class="f-btm-2">
+				<img src="image/gswj.jpg">
+				<span>ICP经营许可证编号：粤B2-20120688</span>
+				<img src="image/guohui.png">
+				<a href="#">粤公网安备 44030502000309号 </a>
+			</div>
+			<div class="f-btm-3">
+				<a href="#">加入我们</a> -
+				<a href="#">公益</a> -
+				<a href="#">星空之约</a> -
+				<a href="#">问题反馈</a> -
+			    <a href="#">简体中文</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+	  (()=>{
+	    $.get("data/homepage_banners.php",data=>{
+		 //插入数据
+		  var html="";          
+		  data.push(data[0]);
+		  console.log(data);
+		  for(var p of data){
+		    html+=
+			`<li>
+		       <a href="#"><img src="${p.hpic}"></a>
+		     </li>`
+		  }
+		  $(".carousel").html(html);
+		  //轮播
+		   var index=0
+	      var Lwidth=parseInt($('.carousel img').css("width"))
+	      var Clen=$('.carousel li').length;
+		  $(".carousel").css("width",Clen*Lwidth)
+		  $(".bot-btn li").click(function(){
+              var ind=$(this).index();
+			  index=ind;
+			    
+		    $(".carousel").animate({left:-ind*Lwidth},500);
+			$(".bot-btn li").eq(index).siblings().removeClass("on");
+			$(".bot-btn li").eq(index).addClass("on");
+		  })
+		  index=index;
+		  var timer=null,flag=true;
+          timer=setInterval(moveRight,2000)
+		  function moveLeft(){
+			  clearInterval(timer);
+			  var Uleft=parseInt($('.carousel').css("left"));
+			  console.log(Uleft);console.log(index);  
+			 if(flag){if(Uleft>=0){
+				  index=Clen-1;
+				  $('.carousel').css('left',-index*Lwidth);
+                  
+				}
+			  index--;
+			  $(".carousel").animate({left:-index*Lwidth},500);
+			  $(".bot-btn li").eq(index).siblings().removeClass("on");
+			  $(".bot-btn li").eq(index).addClass("on");
+			  flag=false;
+			  setTimeout(function(){flag=true},510);
+			  }
+			  
+		  }
+		  function moveRight(){
+			  clearInterval(timer);
+		    var Uleft=parseInt($('.carousel').css("left")); 
+			console.log(Uleft);console.log(index);
+			if(flag){if(Uleft<=(-Clen+1)*Lwidth){
+				  index=0;
+				  $('.carousel').css('left',index*Lwidth)
+				}
+			  index++;
+              $(".carousel").animate({left:-index*Lwidth},500);
+			  if(index==3)index=0;
+			  $(".bot-btn li").eq(index).siblings().removeClass("on");
+			  $(".bot-btn li").eq(index).addClass("on");
+			  flag=false;
+              setTimeout(function(){flag=true},510)
+			  }	
+			  timer=setInterval(moveRight,2000)
+		  }
+
+          $(".prev-btn").click(moveLeft)
+	      $(".next-btn").click(moveRight)
+		  
+		  $(".main-banner").on("mouseover",".carousel",()=>{
+		    clearInterval(timer);
+		  });
+		  $(".main-banner").on("mouseout",'.carousel',()=>{
+		    timer=setInterval(moveRight,2000)
+		  })
+	  })
+     })();
+	  
+	  (()=>{
+	    $.get("data/homepage_vpic.php",data=>{
+		  var html="";
+		  for(var p of data){
+		    html+=`
+		      <div>  
+	            <img src="${p.dpic}">
+		      </div>
+		    `
+		  }
+		  $(".main-bot").html(html);
+		})
+	  })() 
+	</script>
+</body>
+</html>
